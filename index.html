@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Conference on Disruptive Technologies - DSU</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main CSS file - Make sure this path is correct -->
+    <link rel="stylesheet" href="./styles.css">
+    <!-- Inline critical CSS to ensure basic styling appears immediately -->
+    <style>
+        /* Critical CSS for immediate display */
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #7b1fa2;
+            --accent-color: #ff5722;
+            --gradient-start: #1a237e;
+            --gradient-end: #4a148c;
+            --light-color: #f5f5f5;
+            --dark-color: #212121;
+            --text-color: #333333;
+            --text-light: #ffffff;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: var(--light-color);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .title-section {
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            color: var(--text-light);
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .main-nav {
+            background-color: var(--text-light);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <!-- Top Bar with Date, Location and Social Links -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="date-location">
+                    <span><i class="fas fa-calendar-alt"></i> 19-21 November 2021</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Bengaluru, India</span>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Logo Bar -->
+        <div class="logo-bar">
+            <div class="container">
+                <div class="logos">
+                    <img src="https://placeholder.svg?height=80&width=120" alt="CAS Logo" class="logo">
+                    <img src="https://placeholder.svg?height=80&width=120" alt="IEEE Logo" class="logo">
+                    <img src="https://placeholder.svg?height=80&width=120" alt="DSI Logo" class="logo">
+                </div>
+            </div>
+        </div>
+
+        <!-- Title Section -->
+        <div class="title-section">
+            <div class="container">
+                <h1>International Conference on Disruptive Technologies</h1>
+                <h2>for Multi-Disciplinary Research & Applications</h2>
+                <p>Organized by Dayananda Sagar Group of Institutions</p>
+                <div class="conference-badge">
+                    <span>SAGAR CENTENARY CONFERENCE</span>
+                    <span class="ieee-id">IEEE Conference ID: 52345</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+            <div class="container">
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link">ABOUT <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-content">
+                                <a href="#" class="dropdown-item">
+                                    <span class="item-title">Overview</span>
+                                    <span class="item-description">About the conference</span>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <span class="item-title">Committee</span>
+                                    <span class="item-description">Organizing committee</span>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <span class="item-title">Sponsors</span>
+                                    <span class="item-description">Our partners</span>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <span class="item-title">Contact</span>
+                                    <span class="item-description">Get in touch</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link">PROGRAM <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-content">
+                                <a href="#" class="dropdown-item">
+                                    <span class="item-title">Keynotes</span>
+                                    <span class="item-description">Featured speakers</span>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <span class="item-title">Technical Program</span>
+                                    <span class="item-description">Sessions and presentations</span>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <span class="item-title">Schedule</span>
+                                    <span class="item-description">Conference timeline</span>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <span class="item-title">Workshops</span>
+                                    <span class="item-description">Interactive sessions</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link">AUTHORS <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-content">
+                                <a href="#" class="dropdown-item">
+                                    <span class="item-title">Call for Papers</span>
+                                    <span class="item-description">Submit your research</span>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <span class="item-title">Paper Submission</span>
+                                    <span class="item-description">Guidelines and process</span>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <span class="item-title">Important Dates</span>
+                                    <span class="item-description">Key deadlines</span>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <span class="item-title">Templates</span>
+                                    <span class="item-description">Format your paper</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link">REGISTRATION <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-content">
+                                <a href="#" class="dropdown-item">
+                                    <span class="item-title">Registration Fees</span>
+                                    <span class="item-description">Pricing information</span>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <span class="item-title">Payment Method</span>
+                                    <span class="item-description">How to pay</span>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <span class="item-title">Policy</span>
+                                    <span class="item-description">Terms and conditions</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link">STAY/TRAVEL <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-content">
+                                <a href="#" class="dropdown-item">
+                                    <span class="item-title">Venue</span>
+                                    <span class="item-description">Conference location</span>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <span class="item-title">Accommodation</span>
+                                    <span class="item-description">Hotel information</span>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <span class="item-title">Transportation</span>
+                                    <span class="item-description">Getting around</span>
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <span class="item-title">Visa Information</span>
+                                    <span class="item-description">Travel requirements</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Exploring the Future of Technology</h2>
+                <p>Join us for three days of innovation, research, and networking</p>
+                <div class="countdown" id="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">00</span>
+                        <span class="countdown-label">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">00</span>
+                        <span class="countdown-label">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">00</span>
+                        <span class="countdown-label">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">00</span>
+                        <span class="countdown-label">Seconds</span>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary">Register Now</a>
+                    <a href="#" class="btn btn-secondary">Submit Paper</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About the Conference</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>The International Conference on Disruptive Technologies for Multi-Disciplinary Research & Applications aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of disruptive technologies and their applications across various disciplines.</p>
+                    <p>This premier interdisciplinary platform provides opportunities to present and discuss the most recent innovations, trends, and concerns as well as practical challenges encountered and solutions adopted in the fields of Disruptive Technologies.</p>
+                    <a href="#" class="btn btn-outline">Learn More</a>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Speakers</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">300+</div>
+                        <div class="stat-label">Attendees</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">20+</div>
+                        <div class="stat-label">Countries</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Papers</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keynote Speakers Section -->
+    <section class="keynote-speakers">
+        <div class="container">
+            <div class="section-header">
+                <h2>Keynote Speakers</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="speakers-grid">
+                <div class="speaker-card">
+                    <div class="speaker-image">
+                        <img src="https://placeholder.svg?height=300&width=300" alt="Speaker 1">
+                    </div>
+                    <div class="speaker-info">
+                        <h3>Dr. Aisha Patel</h3>
+                        <p class="speaker-title">AI Research Director, Google</p>
+                        <p class="speaker-bio">Leading expert in artificial intelligence and machine learning with over 15 years of experience.</p>
+                        <div class="speaker-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-image">
+                        <img src="https://placeholder.svg?height=300&width=300" alt="Speaker 2">
+                    </div>
+                    <div class="speaker-info">
+                        <h3>Prof. Rajiv Kumar</h3>
+                        <p class="speaker-title">Head of Robotics, MIT</p>
+                        <p class="speaker-bio">Pioneer in robotics and automation systems with numerous patents and publications.</p>
+                        <div class="speaker-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-image">
+                        <img src="https://placeholder.svg?height=300&width=300" alt="Speaker 3">
+                    </div>
+                    <div class="speaker-info">
+                        <h3>Dr. Elena Rodriguez</h3>
+                        <p class="speaker-title">CTO, Quantum Computing Inc.</p>
+                        <p class="speaker-bio">Quantum computing expert with groundbreaking research in quantum algorithms.</p>
+                        <div class="speaker-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-image">
+                        <img src="https://placeholder.svg?height=300&width=300" alt="Speaker 4">
+                    </div>
+                    <div class="speaker-info">
+                        <h3>Dr. James Chen</h3>
+                        <p class="speaker-title">Blockchain Researcher, Stanford</p>
+                        <p class="speaker-bio">Leading authority on blockchain technology and decentralized systems.</p>
+                        <div class="speaker-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all-speakers">
+                <a href="#" class="btn btn-outline">View All Speakers</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conference Tracks Section -->
+    <section class="tracks">
+        <div class="container">
+            <div class="section-header">
+                <h2>Conference Tracks</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="tracks-grid">
+                <div class="track-card">
+                    <div class="track-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Artificial Intelligence</h3>
+                    <p>Machine Learning, Deep Learning, Neural Networks, Computer Vision, Natural Language Processing</p>
+                </div>
+                <div class="track-card">
+                    <div class="track-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Quantum Computing</h3>
+                    <p>Quantum Algorithms, Quantum Cryptography, Quantum Machine Learning, Quantum Hardware</p>
+                </div>
+                <div class="track-card">
+                    <div class="track-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h3>Blockchain Technology</h3>
+                    <p>Distributed Ledger, Smart Contracts, Cryptocurrencies, Decentralized Applications</p>
+                </div>
+                <div class="track-card">
+                    <div class="track-icon">
+                        <i class="fas fa-vr-cardboard"></i>
+                    </div>
+                    <h3>AR/VR Technologies</h3>
+                    <p>Augmented Reality, Virtual Reality, Mixed Reality, Immersive Experiences</p>
+                </div>
+                <div class="track-card">
+                    <div class="track-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Cognitive Computing</h3>
+                    <p>Cognitive Systems, Human-Computer Interaction, Cognitive Robotics, Affective Computing</p>
+                </div>
+                <div class="track-card">
+                    <div class="track-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Internet of Things</h3>
+                    <p>IoT Architectures, Smart Cities, Industrial IoT, IoT Security, Edge Computing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Important Dates Section -->
+    <section class="important-dates">
+        <div class="container">
+            <div class="section-header">
+                <h2>Important Dates</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">June 15, 2021</div>
+                    <div class="timeline-content">
+                        <h3>Paper Submission Deadline</h3>
+                        <p>Last date to submit your research papers</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">July 30, 2021</div>
+                    <div class="timeline-content">
+                        <h3>Notification of Acceptance</h3>
+                        <p>Authors will be notified about paper acceptance</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">August 31, 2021</div>
+                    <div class="timeline-content">
+                        <h3>Camera-Ready Submission</h3>
+                        <p>Final version of accepted papers due</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">September 30, 2021</div>
+                    <div class="timeline-content">
+                        <h3>Early Bird Registration</h3>
+                        <p>Last date for early bird registration discount</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">November 19-21, 2021</div>
+                    <div class="timeline-content">
+                        <h3>Conference Dates</h3>
+                        <p>Main conference program</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section class="sponsors">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Sponsors</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="sponsors-grid">
+                <div class="sponsor-category">
+                    <h3>Platinum Sponsors</h3>
+                    <div class="sponsor-logos">
+                        <img src="https://placeholder.svg?height=100&width=200" alt="Sponsor 1">
+                        <img src="https://placeholder.svg?height=100&width=200" alt="Sponsor 2">
+                    </div>
+                </div>
+                <div class="sponsor-category">
+                    <h3>Gold Sponsors</h3>
+                    <div class="sponsor-logos">
+                        <img src="https://placeholder.svg?height=80&width=160" alt="Sponsor 3">
+                        <img src="https://placeholder.svg?height=80&width=160" alt="Sponsor 4">
+                        <img src="https://placeholder.svg?height=80&width=160" alt="Sponsor 5">
+                    </div>
+                </div>
+                <div class="sponsor-category">
+                    <h3>Silver Sponsors</h3>
+                    <div class="sponsor-logos">
+                        <img src="https://placeholder.svg?height=60&width=120" alt="Sponsor 6">
+                        <img src="https://placeholder.svg?height=60&width=120" alt="Sponsor 7">
+                        <img src="https://placeholder.svg?height=60&width=120" alt="Sponsor 8">
+                        <img src="https://placeholder.svg?height=60&width=120" alt="Sponsor 9">
+                    </div>
+                </div>
+            </div>
+            <div class="become-sponsor">
+                <h3>Interested in becoming a sponsor?</h3>
+                <a href="#" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venue Section -->
+    <section class="venue">
+        <div class="container">
+            <div class="section-header">
+                <h2>Conference Venue</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="venue-content">
+                <div class="venue-info">
+                    <h3>Dayananda Sagar University</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Kumaraswamy Layout, Bengaluru, Karnataka 560078, India</p>
+                    <p><i class="fas fa-phone"></i> +91 80 4909 2000</p>
+                    <p><i class="fas fa-envelope"></i> conference2021@dsu.edu.in</p>
+                    <div class="venue-features">
+                        <div class="venue-feature">
+                            <i class="fas fa-wifi"></i>
+                            <span>Free Wi-Fi</span>
+                        </div>
+                        <div class="venue-feature">
+                            <i class="fas fa-parking"></i>
+                            <span>Parking Available</span>
+                        </div>
+                        <div class="venue-feature">
+                            <i class="fas fa-utensils"></i>
+                            <span>Dining Options</span>
+                        </div>
+                        <div class="venue-feature">
+                            <i class="fas fa-wheelchair"></i>
+                            <span>Accessible</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-outline">View on Map</a>
+                </div>
+                <div class="venue-image">
+                    <img src="https://placeholder.svg?height=400&width=600" alt="Conference Venue">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for the latest conference updates</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Program</a></li>
+                        <li><a href="#">Registration</a></li>
+                        <li><a href="#">Call for Papers</a></li>
+                        <li><a href="#">Venue</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Dayananda Sagar University, Bengaluru</p>
+                    <p><i class="fas fa-phone"></i> +91 80 4909 2000</p>
+                    <p><i class="fas fa-envelope"></i> conference2021@dsu.edu.in</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2021 Dayananda Sagar Group of Institutions. All Rights Reserved.</p>
+                <p>Designed with <i class="fas fa-heart"></i> for DSU</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript file - Make sure this path is correct -->
+    <script src="./script.js"></script>
+</body>
+</html>
+
